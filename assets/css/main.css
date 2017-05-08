@@ -1,0 +1,40 @@
+@import url("template-main.css");
+
+.box.special{
+  display: inline-block;
+  width: 100%;
+}
+
+.search-result {
+  text-align: justify;
+}
+
+#banner {
+    background-image: url(images/overlay.png), url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?dpr=1&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=&bg=);
+}
+
+body.landing #main {
+  margin-top: 0;
+}
+
+#searchResults .box{
+  padding: 1em 2em;
+}
+
+input[type=text] {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+strong, b {
+    color: #fff;
+    font-weight: 400;
+}
+
+#backToTop {
+  display: inline-block;
+  margin-bottom: 50px;
+}

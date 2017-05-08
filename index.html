@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+Alpha by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>Top 10 Wikipedia Entries | Victor Catamo</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body class="landing">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1>Made by <a target="_blank" href="http://catamo.github.io/">Victor Catamo</a></h1>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<form>
+				<h2>Top 10 in Wikipedia</h2>
+				<div class="container">
+					<p>Yeah, I know, why search Wikipedia articles here and not on Google or on, you know, <i>Wikipedia</i>? <br>Let's say its way more simple here. It search the <strong>top 10</strong> articles related to your query.</p>
+					<div class="row uniform">
+						<div class="-3u 6u -1u(mobile) 10u(mobile)">
+							<input type="text" name="query" id="query" value="" placeholder="Search terms..." />
+						</div>
+					</div>
+					<div class="row uniform">
+						<div class="3u 12u(mobile) -3u">
+							<button type="submit" id="btnSearch" class="button alt small">Search</button>
+						</div>
+						<div class="3u 12u(mobile)">
+							<a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random" class="button special small">Random</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<!-- Main -->
+		<section id="main" class="container hidden">
+
+			<header class="major">
+				<h2>Search results</h2>
+				<hr>
+			</header>
+
+			<div id="searchResults">
+			</div>
+
+
+		</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<a href="#" class="text-center" id="backToTop">
+					<i class="fa fa-chevron-up" aria-hidden="true"></i>
+				</a>
+				<ul class="icons">
+					<li><a href="http://github.com/Catamo" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://codepen.io/CasacaDyn" class="icon fa-codepen"><span class="label">Codepen</span></a></li>
+					<li><a href="https://www.linkedin.com/in/victor-catamo-rojas/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:victor@chvre.co" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Victor Catamo. </li><li>Design based from Alpha <a href="http://html5up.net">@HTML5UP</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
+		<script id="entry-template" type="text/x-handlebars-template">
+			<section class="box special">
+				<div class="search-result">
+					<h3><a href="{{url}}" target="_blank">{{title}}</a></h3>
+					<p><span class="image left"><img src="{{thumbnail.source}}" alt=""></span>{{extract}}
+				</div>
+			</section>
+		</script>
+
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/app.js"></script>
+
+	</body>
+	</html>
