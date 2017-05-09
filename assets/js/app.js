@@ -27,12 +27,17 @@ $(function() {
 
         $searchResults.html("");
 
-        $.each(data.query.pages, function(key, val){
-          val.url = urlPage + val.pageid;
+        if (data.query && data.query.pages) {
+          $.each(data.query.pages, function(key, val){
+            val.url = urlPage + val.pageid;
 
-          html = template(val);
-          $searchResults.append(html);
-        });
+            html = template(val);
+            $searchResults.append(html);
+          });
+        }
+        else {
+          $searchResults.html('<h3 class="text-center">No results</h3>');
+        }
 
         $main.removeClass("hidden");
 

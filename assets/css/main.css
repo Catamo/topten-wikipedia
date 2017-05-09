@@ -34,6 +34,10 @@ strong, b {
     font-weight: 400;
 }
 
+.text-center {
+  text-align: center;
+}
+
 #backToTop {
   display: inline-block;
   margin-bottom: 50px;
